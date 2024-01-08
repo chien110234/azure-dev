@@ -1,4 +1,10 @@
 # Universal Windows Platform
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'PublishProfile'
+    PublishProfilePath: '$(System.DefaultWorkingDirectory)/**/*.pubxml'
+    PublishProfilePassword: 'Thang1988A@1111'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build a Universal Windows Platform project using Visual Studio.
 # Add steps that test and distribute an app, save build artifacts, and more:
 # https://aka.ms/yaml
